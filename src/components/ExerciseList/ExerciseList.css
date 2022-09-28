@@ -1,3 +1,10 @@
 .exercise-list-container{
     background-color: rgb(230, 224, 224);
 }
+.img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-left: 90px;
+    margin-top: 20px;
+}

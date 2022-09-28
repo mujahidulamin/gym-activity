@@ -1,10 +1,8 @@
-import React, { useState } from 'react';
+import React, {  useState } from 'react';
+import { addToDb } from '../../utilities/fakedb';
+import img from'../../images/img.jpg'
 import './ExerciseList.css'
 const ExerciseList = (props) => {
-    console.log(props);
-   
-
-
     const {list} = props;
     console.log(list);
     let totalTime = 0;
@@ -14,14 +12,17 @@ const ExerciseList = (props) => {
 
     const [breaks, setBreak] = useState(0);
     const breakTime = (breaks) => {
-        const newBreak = breaks;
-        setBreak(newBreak)
-
+        setBreak(breaks)
+        addToDb(breaks)
     }
+    const storedList = localStorage.getItem('break-time');
+
 
     return (
         <div className='exercise-list-container'>
-            <p>selected: {list.length}</p>
+
+            <img className='img' src= {img} alt="" />
+            <p className='list-name'>Name: Mujahidul Amin</p>
             <h4>Add A Break</h4>
             <button onClick={() => breakTime(10)}>10s</button>
             <button onClick={() => breakTime(20)}>20s</button>
@@ -32,7 +33,7 @@ const ExerciseList = (props) => {
 
             <h4>Exercise Details</h4>
             <p>Exercise Time: {totalTime}</p>
-            <p>Break Time: {breaks}</p>
+            <p>Break Time: {storedList} Seconds</p>
         </div>
     );
 };
