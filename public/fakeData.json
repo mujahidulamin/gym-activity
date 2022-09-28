@@ -1,44 +1,50 @@
 [
     {
         "id": "1",
+        "description": "An exercise in which a person, keeping a prone position with the hands palms down under the shoulders, the balls of the feet on the ground, and the back straight, pushes the body up and lets it down by an alternate straightening and bending of the arms",
         "age": "25-30",
         "name": "Push Up",
         "img": "https://images.unsplash.com/photo-1598971457999-ca4ef48a9a71?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-        "Time": "60s"
+        "Time": "60"
     },
     {
         "id": "2",
+        "description": "A squat is a strength exercise in which the trainee lowers their hips from a standing position and then stands back up",
         "age": "20-30",
         "name": "Squats",
         "img": "https://images.unsplash.com/photo-1541600383005-565c949cf777?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-        "Time": "45s"
+        "Time": "45"
     },
     {
         "id": "3",
         "age": "15-40",
+        "description": "A dumbbell is a short bar with weights on either side which people use for physical exercise to strengthen their arm and shoulder muscles.",
         "name": "Dumbbell",
         "img": "https://images.unsplash.com/photo-1548544155-4d3802f93013?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-        "Time": "50s"
+        "Time": "50"
     },
     {
         "id": "4",
+        "description": "A biceps curl usually starts with the arm in a fully extended position, holding a weight with a supinated (palms facing up) grip. A full repetition consists of bending the elbow until it is fully flexed, then slowly lowering the weight to the starting position",
         "age": "15-30",
-        "name": "30-Degree Lat Pulldown",
-        "img": "https://images.unsplash.com/photo-1507398941214-572c25f4b1dc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=773&q=80",
-        "Time": "60s"
+        "name": "Bicep Curl",
+        "img": "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        "Time": "60"
     },
     {
         "id": "5",
+        "description": "Your elbows and palms should both face forward. Your feet can be either shoulder-width apart, or staggered. Engage your core and squeeze your shoulder blades back, then press the bar towards the ceiling by extending your arms straight above your head until your elbows lock",
         "age": "20-30",
-        "name": "Presses",
+        "name": "Shoulder Press",
         "img": "https://images.unsplash.com/photo-1434754205268-ad3b5f549b11?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=874&q=80",
-        "Time": "30s"
+        "Time": "30"
     },
     {
         "id": "6",
+        "description": "The pull up is a classic strength-building move that everyone needs to do in the gym. But whatever you do, don’t lose your form in favor of reps. Keep those legs straight for maximum payoff",
         "age": "20-30",
-        "name": "Presses",
+        "name": "Pull ups",
         "img": "https://images.unsplash.com/photo-1532029837206-abbe2b7620e3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-        "Time": "40s"
+        "Time": "40"
     }
 ]
