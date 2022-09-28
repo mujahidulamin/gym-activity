@@ -5,7 +5,6 @@ import './Home.css'
 const Home = () => {
     const [exercises, setExercises] = useState([]);
     const [list, setList] = useState([])
-
     useEffect(() => {
         fetch('fakeData.json')
         .then(res => res.json())
@@ -31,8 +30,7 @@ const Home = () => {
                 }
             </div>
             <div className='exercise-list-container'>
-                <ExerciseList></ExerciseList>
-                <p>selected items: {list.length}</p>
+                <ExerciseList list= {list}></ExerciseList>
             </div>
         </div>
     );
