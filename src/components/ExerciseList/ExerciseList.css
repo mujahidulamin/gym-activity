@@ -1,19 +1,29 @@
-.exercise-list-container{
+.exercise-list-container {
     background-color: rgb(230, 224, 224);
 }
-.img{
-    height: 100px;
-    width: 100px;
+
+.img {
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
-    margin-left: 90px;
-    margin-top: 20px;
 }
-.name{
-    margin-left: 55px;
-    margin-top: 20px;
-}
-.break button:focus{
-    color: white;
+
+
+.break button:focus {
+    color: black;
     background-color: #ffcd39;
 
 }
+
+/* @media screen and (max-width: 576px) {
+    .img {
+        margin-left: 210px;
+    }
+
+    .name {
+        text-align: center;
+    }
+    .address{
+        margin-left: 210px;
+    }
+} */
