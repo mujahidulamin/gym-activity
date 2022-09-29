@@ -31,11 +31,11 @@ const ExerciseList = (props) => {
                 <img className='img mx-2 mt-2' src={img} alt="" />
                 <p className='pt-3'><span className='list-name fw-bolder'>Name:</span> Mujahidul Amin</p>
             </div>
-            <span className='ms-5 p-4 mb-5'>Dhaka, Bangladesh</span>
+            <p className='ms-5 ps-2 mb-4 '><i className='fa-sharp fa-solid fa-location-dot me-1'></i> Dhaka, Bangladesh</p>
             
             <div className='mx-2 p-2 bg-light rounded-3 mt-3 d-flex'>
                 <div className='px-3 border border-white mt-1'>
-                    <h6>75<sub>kg</sub> <br />
+                    <h6>70<sub>kg</sub> <br />
                         <small>Weight</small></h6>
                 </div>
                 <div className='px-3 border border-white mt-1 '>
@@ -43,7 +43,7 @@ const ExerciseList = (props) => {
                         <small>Height</small></h6>
                 </div>
                 <div className='px-3 border border-white mt-1 '>
-                    <h6>25<sub>years</sub> <br />
+                    <h6>26<sub>years</sub> <br />
                         <small>Age</small></h6>
                 </div>
 
