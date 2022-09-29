@@ -22,6 +22,7 @@ const ExerciseList = (props) => {
 
     const notify = () => {
         toast('Your activity successfully completed')
+        localStorage.removeItem('break-time')
     }
 
     return (
@@ -35,15 +36,15 @@ const ExerciseList = (props) => {
             
             <div className='mx-2 p-2 bg-light rounded-3 mt-3 d-flex'>
                 <div className='px-3 border border-white mt-1'>
-                    <h6>70<sub>kg</sub> <br />
+                    <h6><span className='text-warning'>70</span><sub>kg</sub> <br />
                         <small>Weight</small></h6>
                 </div>
                 <div className='px-3 border border-white mt-1 '>
-                    <h6>5.11 <br />
+                    <h6> <span className='text-warning'>5.11</span> <br />
                         <small>Height</small></h6>
                 </div>
                 <div className='px-3 border border-white mt-1 '>
-                    <h6>26<sub>years</sub> <br />
+                    <h6><span className='text-warning'>26</span><sub>years</sub> <br />
                         <small>Age</small></h6>
                 </div>
 
@@ -62,8 +63,8 @@ const ExerciseList = (props) => {
 
 
             <h5 className='mx-2 mt-5 mb-3'>Exercise Details</h5>
-            <p className='mx-2 p-3 bg-light rounded-3 mb-3 '>Exercise Time: <span className='ms-4'>{totalTime} Seconds</span></p>
-            <p className='mx-2 p-3 bg-light rounded-3'>Break Time:  <span className='ms-5'>{storedList} Seconds</span></p>
+            <p className='mx-2 p-3 bg-light rounded-3 mb-3 '>Exercise Time: <span className='ms-4'><span className='text-warning fw-bolder'>{totalTime}</span> Seconds</span></p>
+            <p className='mx-2 p-3 bg-light rounded-3'>Break Time:  <span className='ms-5'><span className='text-warning fw-bolder'>{storedList}</span> Seconds</span></p>
             <button onClick={notify} className='btn btn-warning w-100 mt-4'>Activity Completed</button>
         </div>
     );

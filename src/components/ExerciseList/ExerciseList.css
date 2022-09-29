@@ -1,5 +1,5 @@
 .exercise-list-container {
-    background-color: rgb(230, 224, 224);
+    background-color: rgb(226, 216, 216);
 }
 
 .img {
@@ -14,16 +14,3 @@
     background-color: #ffcd39;
 
 }
-
-/* @media screen and (max-width: 576px) {
-    .img {
-        margin-left: 210px;
-    }
-
-    .name {
-        text-align: center;
-    }
-    .address{
-        margin-left: 210px;
-    }
-} */
