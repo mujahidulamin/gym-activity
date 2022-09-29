@@ -27,19 +27,19 @@ const Home = () => {
             <div >
                 <h4 className='container mt-3'>Select today’s activity</h4>
                 <div className='home-container'>
-                <div className='exercise-container'>
-                    {
-                        exercises.map(exercise => <Exercise
-                            key={exercise.id}
-                            exercise={exercise}
-                            addExerciseToList={addExerciseToList}
-                        ></Exercise>)
-                    }
+                    <div className='exercise-container'>
+                        {
+                            exercises.map(exercise => <Exercise
+                                key={exercise.id}
+                                exercise={exercise}
+                                addExerciseToList={addExerciseToList}
+                            ></Exercise>)
+                        }
 
-                </div>
-                <div className='exercise-list-container'>
-                    <ExerciseList list={list}></ExerciseList>
-                </div>
+                    </div>
+                    <div className='exercise-list-container'>
+                        <ExerciseList list={list}></ExerciseList>
+                    </div>
                 </div>
             </div>
 
