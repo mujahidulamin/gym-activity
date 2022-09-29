@@ -7,7 +7,7 @@ const Header = () => {
             <div className='container'>
                 <a className = 'navbar-brand' href="/navbar">
                 <img className='me-2' src= {logo} alt="" />
-                    <span className='ms-1 fw-bolder'>Gym Activity</span>
+                    <span className='ms-1 fw-bolder logo-name'>Gym Activity</span>
                 </a>
             </div>
         </nav>

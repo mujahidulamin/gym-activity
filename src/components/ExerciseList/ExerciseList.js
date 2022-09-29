@@ -78,7 +78,7 @@ const ExerciseList = (props) => {
 
 
             <h5 className='mx-2 mt-5 mb-3'>Exercise Details</h5>
-            <p className='mx-2 p-3 bg-light rounded-3 mb-3 '>Exercise Time: <span className='ms-4'><span className='text-warning fw-bolder'>{totalTime}</span> Seconds</span></p>
+            <p className='mx-2 p-3 bg-light rounded-3 mb-3 '>Exercise Time: <span className='exercise-time'><span className='text-warning fw-bolder'>{totalTime}</span> Seconds</span></p>
             <p className='mx-2 p-3 bg-light rounded-3'>Break Time:  <span className='ms-5'><span className='text-warning fw-bolder'>{breaks}</span> Seconds</span></p>
             <button onClick={notify} className='btn btn-warning w-100 mt-4'>Activity Completed</button>
         </div>
