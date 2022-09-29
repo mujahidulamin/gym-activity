@@ -8,3 +8,12 @@
     margin-left: 90px;
     margin-top: 20px;
 }
+.name{
+    margin-left: 55px;
+    margin-top: 20px;
+}
+.break button:focus{
+    color: white;
+    background-color: #ffcd39;
+
+}
