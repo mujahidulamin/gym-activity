@@ -24,8 +24,9 @@ const Home = () => {
     return (
 
         <div >
-
-            <div className='home-container'>
+            <div >
+                <h4 className='container mt-3'>Select today’s exercise</h4>
+                <div className='home-container'>
                 <div className='exercise-container'>
                     {
                         exercises.map(exercise => <Exercise
@@ -38,6 +39,7 @@ const Home = () => {
                 </div>
                 <div className='exercise-list-container'>
                     <ExerciseList list={list}></ExerciseList>
+                </div>
                 </div>
             </div>
 

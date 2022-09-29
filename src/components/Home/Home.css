@@ -6,7 +6,19 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 45px;
-    margin: 50px 50px;
+    margin: 10px 50px;
+}
+.exercise-list-container{
+    margin-top: -27px;
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .home-container{
+        grid-template-columns: 2fr, 1fr;
+    }
+    .exercise-container {
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
 }
 
 @media screen and (min-width: 1px) and (max-width: 576px) {
@@ -16,6 +28,9 @@
     .exercise-container {
         grid-template-columns: repeat(1, 1fr);
         
+    }
+    .exercise-list-container{
+        margin-top: 20px;
     }
 }
 

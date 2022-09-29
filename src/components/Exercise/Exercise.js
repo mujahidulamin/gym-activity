@@ -19,7 +19,6 @@ const Exercise = (props) => {
                     <button onClick={() => addExerciseToList(props.exercise)} className='btn btn-warning w-100'>Add to List</button>
                 </div>
             </div>
-          
         </div>
     );
 };
