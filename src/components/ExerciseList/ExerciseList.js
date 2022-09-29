@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { addToDb } from '../../utilities/fakedb';
 import img from '../../images/img.jpg'
 import './ExerciseList.css'
@@ -13,16 +13,31 @@ const ExerciseList = (props) => {
         totalTime = totalTime + exercise.Time;
     }
 
-    const [breaks, setBreak] = useState(0);
+    const [breaks, setBreak] = useState([0]);
+    console.log(breaks);
     const breakTime = (breaks) => {
         setBreak(breaks)
         addToDb(breaks)
     }
-    const storedList = localStorage.getItem('break-time');
+
+    useEffect(() => {
+        let storedList = localStorage.getItem('break-time');
+        if(storedList)
+        {
+            setBreak(storedList)
+        }else{
+            storedList = 0;
+        }
+    }, [])
+
+
 
     const notify = () => {
         toast('Your activity successfully completed')
         localStorage.removeItem('break-time')
+        setTimeout(() => {
+            window.location.reload()
+        }, 5000);
     }
 
     return (
@@ -33,7 +48,7 @@ const ExerciseList = (props) => {
                 <p className='pt-3'><span className='list-name fw-bolder'>Name:</span> Mujahidul Amin</p>
             </div>
             <p className='ms-5 ps-2 mb-4 '><i className='fa-sharp fa-solid fa-location-dot me-1'></i> Dhaka, Bangladesh</p>
-            
+
             <div className='mx-2 p-2 bg-light rounded-3 mt-3 d-flex'>
                 <div className='px-3 border border-white mt-1'>
                     <h6><span className='text-warning'>70</span><sub>kg</sub> <br />
@@ -64,7 +79,7 @@ const ExerciseList = (props) => {
 
             <h5 className='mx-2 mt-5 mb-3'>Exercise Details</h5>
             <p className='mx-2 p-3 bg-light rounded-3 mb-3 '>Exercise Time: <span className='ms-4'><span className='text-warning fw-bolder'>{totalTime}</span> Seconds</span></p>
-            <p className='mx-2 p-3 bg-light rounded-3'>Break Time:  <span className='ms-5'><span className='text-warning fw-bolder'>{storedList}</span> Seconds</span></p>
+            <p className='mx-2 p-3 bg-light rounded-3'>Break Time:  <span className='ms-5'><span className='text-warning fw-bolder'>{breaks}</span> Seconds</span></p>
             <button onClick={notify} className='btn btn-warning w-100 mt-4'>Activity Completed</button>
         </div>
     );
