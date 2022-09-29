@@ -48,7 +48,7 @@ const ExerciseList = (props) => {
                 </div>
 
             </div>
-            <h6 className='mx-2 my-3 mb-3'>Add A Break</h6>
+            <h6 className='mx-2 my-4 mb-4'>Add A Break</h6>
             <div>
                 <div className='mx-2 p-3 bg-light rounded-3 break'>
                     <button className='m-1 py-1 border-0 rounded-5' onClick={() => breakTime(10)}>10s</button>
